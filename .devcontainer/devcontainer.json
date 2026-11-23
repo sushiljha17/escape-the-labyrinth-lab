@@ -1,0 +1,25 @@
+// GitHub Codespaces set-up for the lab: a ready-made "laptop" in the browser.
+// It installs the same tools as the laptop list (Python, Git, uv, the Spec Kit CLI and the
+// Squad CLI) plus GitHub Copilot Chat. It does NOT add Spec Kit or Squad to this repository:
+// you still do that during the session with `specify init` and `squad init`.
+{
+  "name": "Escape the Labyrinth lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "waitFor": "postCreateCommand",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    },
+    "vscode": {
+      "extensions": ["GitHub.copilot-chat", "ms-python.python"]
+    }
+  }
+}

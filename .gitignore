@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.coverage
+test-results.xml
+.DS_Store
+Thumbs.db

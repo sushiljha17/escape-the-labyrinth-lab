@@ -1,0 +1,10 @@
+[project]
+name = "labyrinth"
+version = "0.1.0"
+description = "Escape the Labyrinth: a tiny text adventure for practising spec-driven, agentic development"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+# Standard library only, tests included. Run the tests from the root of the repository:
+#   python -m unittest -v
