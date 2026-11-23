@@ -34,7 +34,6 @@ class Game:
 
     def handle(self, line: str) -> str:
         """Return the reply to one line typed by the player."""
-        print(f"[debug] player typed: {line!r}")
         try:
             return self._handle(line)
         except Exception:
